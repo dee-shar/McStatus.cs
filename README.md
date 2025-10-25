@@ -1,8 +1,21 @@
-# mc_status.sh
-Web-API for [mcstatus.io](https://mcstatus.io) an online tool for retrieving the status of any Java Edition or Bedrock Edition Minecraft server
+# mc_status.cs
+Web-API for [mcstatus.io](https://mcstatus.io) an online tool to retrieve current status of any Java Edition or Bedrock Edition Minecraft server
 
 ## Example
-```bash
-source ./mc_status.sh
-get_java_server_status "address"
+```cs
+using System;
+using McStatus;
+using System.Threading.Tasks;
+
+namespace Application
+{
+    internal class Program {
+        static async Task Main() {
+            var api = new McStatusApi();
+            string javaStatus = await api.GetJavaServerStatus("mc.hypixel.net");
+            Console.WriteLine("Java Server Status:");
+            Console.WriteLine(javaStatus);
+        }
+    }
+}
 ```
