@@ -1,4 +1,4 @@
-# mc_status.cs
+# McStatus.cs
 Web-API for [mcstatus.io](https://mcstatus.io) an online tool to retrieve current status of any Java Edition or Bedrock Edition Minecraft server
 
 ## Example
