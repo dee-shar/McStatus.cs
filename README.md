@@ -12,7 +12,6 @@ namespace Application {
         static async Task Main() {
             var api = new McStatusApi();
             string javaStatus = await api.GetJavaServerStatus("mc.hypixel.net");
-            Console.WriteLine("Java Server Status:");
             Console.WriteLine(javaStatus);
         }
     }
