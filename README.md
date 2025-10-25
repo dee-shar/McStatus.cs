@@ -7,12 +7,9 @@ using System;
 using MinecraftStatusApi;
 using System.Threading.Tasks;
 
-namespace Application
-{
-    internal class Program
-    {
-        static async Task Main()
-        {
+namespace Application {
+    internal class Program {
+        static async Task Main() {
             var api = new McStatusApi();
             string javaStatus = await api.GetJavaServerStatus("mc.hypixel.net");
             Console.WriteLine("Java Server Status:");
