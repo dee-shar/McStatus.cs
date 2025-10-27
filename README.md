@@ -3,7 +3,6 @@ Web-API for [mcstatus.io](https://mcstatus.io) an online tool to retrieve curren
 
 ## Example
 ```cs
-using System;
 using MinecraftStatusApi;
 
 namespace Application
